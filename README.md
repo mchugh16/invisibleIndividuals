@@ -7,6 +7,7 @@ In an attempt to identify limitations and improve facial recognition of marginal
 - Can these algorithms consistently maintain its performance and accurately classify the genders of individuals across racial groups?
 
 ## Directory Structure
+```
 .
 +-- data-flat
 +-- data-separated
@@ -82,3 +83,4 @@ In an attempt to identify limitations and improve facial recognition of marginal
 |       +-- separate_generated_original.py
 +-- ProjectPoster.pptx
 +-- README.md
+```
