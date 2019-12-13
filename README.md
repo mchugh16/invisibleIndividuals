@@ -96,6 +96,6 @@ In an attempt to identify limitations and improve facial recognition of marginal
 
 ## Acknowledgements
 - Big thanks to our advisor, Philip Caplan, for all of his guidance and insight as we worked on this project.
-- Creators of Fairface (the dataset we used to train our GAN, generate images, and then combined with our set of generated images to create Invisible Individuals)
+- Kimmo Karkkainen and Jungseok Joo, the creators of Fairface which was the dataset we used to train our GAN, generate images, and then combined with our set of generated images to create Invisible Individuals. See link to Fairface's github repo here: https://github.com/joojs/fairface.
 - Dominic Monn, whose implementation, of a Deep Convolutional Generative Adversarial Network in Tensorflow, we slightly modified to create our images. See link to his implementation here: https://github.com/dmonn/dcgan-oreilly
 - Daniel Pressel, whose Tensorflow implementation, of Convolutional Neural Net that predicts Age and Gender, we used to classify our images. See link to his implementation here: https://github.com/dpressel/rude-carnie
