@@ -84,3 +84,12 @@ In an attempt to identify limitations and improve facial recognition of marginal
 +-- ProjectPoster.pptx
 +-- README.md
 ```
+
+## Description of Directories and Files
+- data-flat: final version of our dataset (Invisible Individuals!). Directory has generated images, original images (from Fairface), and a csv with annotations for the dataset.
+- data-separated: directory with generated and original (Fairface) images. This directory is divided by genders, then races, then cropped (generated) vs. original images. This is a pre-flattened version of the 'data-flat' version. 
+- ProjectPoster.pptx: poster used to present this research after CS701
+- src contains 3 directories: ConvNet-GenderClass, dcgan, and process_data
+- ConvNet-GenderClass is a combination of (1) an implementation of an Age and Gender Deep Learning Network implemented in Tensorflow, and (2) scripts we used to run the pretained version of the netrok on our images, the resulting predictions file, and an R script to creates a plot of the distributions of the probabilities of the classifications of the generated versus original images. This directory contains everything used for Part 2 of our research. See the README in this file for more details, examples, and set up instructions.
+- dcgan contains an ipython notebook with an implementation of a deep convolutional gan (which we used to separate the original fairface dataset and synthesize images for each gender/race subset) as well as a helper python script. This directory contains everything we used to for Part 1 of our research.
+- process_data contains python scripts to crop our generated images as well as separated the generated images from the original images. These scripts were used in between Part 1 and Part 2 of our research. After generating the images and before running both the generated and original images through the classifier, it was necessary to separate out the generated images, and crop out the whitespace. To do this, we used the data-separated directory. We ran the separate_generated_original script within each race/gender subset directory. The images were, as a result, split into generated and original directories. After this we ran the crop.py script on each "generated" dir. The result of running these scripts is what resides withing the data-separated dir. 
