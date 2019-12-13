@@ -1,5 +1,5 @@
 # Part 1 of Invisible Individuals
-# Using Deep Convolutional Generative Adversarial Networks, implented with TensorFlow, to generate a diverse set of human faces.
+## Using Deep Convolutional Generative Adversarial Networks, implented with TensorFlow, to generate a diverse set of human faces.
 
 
 This repository contains source code that is based off of the article ["Deep Convolutional Generative Adversarial Networks with TensorFlow"](https://www.oreilly.com/ideas/deep-convolutional-generative-adversarial-networks-with-tensorflow).
